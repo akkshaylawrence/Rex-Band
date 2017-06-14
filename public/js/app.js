@@ -10,4 +10,6 @@ firebase.initializeApp(config);
 
 var ref = firebase.database().ref('players');
 
-console.log(ref);
+ref.on('value', function (snapshot) {
+    console.log(snapshot.val());
+});
