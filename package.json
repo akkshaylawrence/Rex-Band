@@ -1,0 +1,21 @@
+{
+  "name": "Rex-Band",
+  "version": "1.0.0",
+  "description": " ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akkshay7/Rex-Band/issues"
+  },
+  "homepage": "https://github.com/akkshay7/Rex-Band#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.12",
+    "run-sequence": "^1.2.2"
+  }
+}

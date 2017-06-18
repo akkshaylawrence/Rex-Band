@@ -1,1 +1,0 @@
-var dbObject = firebase.database();
