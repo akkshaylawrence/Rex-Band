@@ -1,0 +1,60 @@
+.mdc-typography {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.mdc-portfolio {
+    margin: 0px;
+}
+
+.mdc-toolbar__title {
+    background: no-repeat 0/32px url("/images/mdc-logo.svg");
+    font-weight: 400;
+    height: 32px;
+    padding: 5px 0 0 50px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 0px;
+}
+
+.mdc-toolbar__row {
+    padding-bottom: 15px
+}
+
+.mdc-toolbar__section {
+    padding-left: 30px
+}
+
+.about:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    background: 50%/100% url(/images/ic_fingerprint.svg);
+}
+
+.page__content {
+    padding-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.mdc-toolbar {
+    background-color: #000000;
+}
+
+.ctitle {
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+#imageAA {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 55px;
+    display: block;
+}
+
+.about {
+    margin-bottom: 15px;
+}
