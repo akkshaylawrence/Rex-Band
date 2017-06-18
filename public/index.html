@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.min.css" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
@@ -8,8 +9,25 @@
 <body>
     <nav>
         <div class="nav-wrapper black z-depth-3">
-            <a href="#" class="brand-logo"><img id="navlogo" src="images/logo.jpeg" alt="Logo"></a>
+            <a href="#" class="brand-logo  hide-on-med-and-down"><img id="navlogo" src="images/logo.jpeg" alt="Logo"></a>
+            <a href="#" data-activates="side-nav" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tour.html">Tour</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="video.html">Videos</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <ul class="side-nav" id="side-nav">
+                <li>
+                    <div class="userView">
+                        <div class="background">
+                            <img src="images/office.jpg">
+                        </div>
+                        <a><span class="white-text name">REX BAND</span></a>
+                        <a><span class="white-text email">Music that makes sense.</span></a>
+                    </div>
+                </li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tour.html">Tour</a></li>
                 <li><a href="music.html">Music</a></li>
@@ -19,5 +37,14 @@
         </div>
     </nav>
 </body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/bin/materialize.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".button-collapse").sideNav();
+    });
+
+</script>
 
 </html>

@@ -1,7 +1,21 @@
-#navlogo{
+#navlogo {
     margin-top: 20px;
     margin-left: 40px;
     height: 120px;
     width: auto;
     border: 3px solid white;
+}
+
+header,
+main,
+footer {
+    padding-left: 240px;
+}
+
+@media only screen and (max-width: 992px) {
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
 }
