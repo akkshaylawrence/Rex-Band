@@ -50,8 +50,11 @@ footer.page-footer {
     margin-top: 14px;
 }
 
-.btn-small {
-    height: 24px;
-    line-height: 24px;
-    padding: 0 0.5rem;
+tr {
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.fas {
+    color: black;
 }
