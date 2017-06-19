@@ -11,11 +11,12 @@ p {
 }
 
 .button-collapse {
-    color: #26a69a;
+    color: white;
+    margin-left: 0px;
 }
 
 .parallax-container {
-    min-height: 500px;
+    min-height: 380px;
     line-height: 0;
     height: auto;
     color: rgba(255, 255, 255, .9);
