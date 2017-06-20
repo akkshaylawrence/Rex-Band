@@ -1,3 +1,10 @@
+.brand-logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: auto;
+}
+
 p {
     line-height: 2rem;
 }
@@ -18,7 +25,7 @@ p {
     width: 100%;
 }
 
-@media only screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .parallax-container .section {
         position: absolute;
         top: 40%;
@@ -26,11 +33,23 @@ p {
     #index-banner .section {
         top: 10%;
     }
+    .brand-logo {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 40px;
+        width: auto;
+    }
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     #index-banner .section {
         top: 0;
+    }
+    .brand-logo {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        height: 30px;
+        width: auto;
     }
 }
 
