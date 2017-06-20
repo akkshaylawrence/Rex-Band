@@ -14,7 +14,14 @@ p {
     margin-left: 0px;
 }
 
-.parallax-container {
+.parallax-container.index {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container.music {
     min-height: 310px;
     line-height: 0;
     height: auto;
