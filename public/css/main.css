@@ -74,10 +74,6 @@ tr {
     padding: 0px;
 }
 
-.fas {
-    color: black;
-}
-
 .newalb {
     width: 300px;
     height: 300px;
@@ -95,4 +91,8 @@ tr {
 .header {
     padding-left: 0px !important;
     margin-bottom: 0px !important;
+}
+
+.faf {
+    color: white;
 }

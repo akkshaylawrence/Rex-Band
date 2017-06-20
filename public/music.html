@@ -27,10 +27,7 @@
                 <li><a href="temp.html">Tour</a></li>
                 <li><a class="active" href="music.html">Music</a></li>
                 <li><a href="t">Videos</a></li>
-                <li><a href="https://www.facebook.com/rexband"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                <li><a href="https://soundcloud.com/rexband"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="badges.html"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                <li><a href="https://soundcloud.com/rexband"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
+                <li><a href="temp.html">Contact</a></li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav">
@@ -47,16 +44,7 @@
                 <li><a href="temp.html">Tour</a></li>
                 <li><a href="music.html">Music</a></li>
                 <li><a href="temp.html">Videos</a></li>
-                <li>
-                    <table>
-                        <tr>
-                            <td><a class="badges" href="https://www.facebook.com/rexband"><i class="fas fa fa-facebook-square" aria-hidden="true"></i></a></td>
-                            <td><a class="badges" href="https://soundcloud.com/rexband"><i class="fas fa fa-soundcloud" aria-hidden="true"></i></a></td>
-                            <td><a class="badges" href="https://soundcloud.com/rexband"><i class="fas fa fa-instagram" aria-hidden="true"></i></a></td>
-                            <td><a class="badges" href="badges.html"><i class="fas fa fa-twitter-square" aria-hidden="true"></i></a></td>
-                        </tr>
-                    </table>
-                </li>
+                <li><a href="temp.html">Contact</a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
@@ -105,9 +93,9 @@
                         </div>
                     </div>
                     <div class="albumview">
-                        <div class="row">
+                        <div id="row" class="row">
                             <div class="col s12 m6 l3">
-                                <div class="card">
+                                <div class="card hoverable">
                                     <div class="card-image waves-effect waves-block waves-light">
                                         <img class="activator" src="images/office.jpg">
                                     </div>
@@ -117,7 +105,7 @@
                                 </div>
                             </div>
                             <div class="col s12 m6 l3">
-                                <div class="card">
+                                <div class="card hoverable">
                                     <div class="card-image waves-effect waves-block waves-light">
                                         <img class="activator" src="images/office.jpg">
                                     </div>
@@ -127,7 +115,7 @@
                                 </div>
                             </div>
                             <div class="col s12 m6 l3">
-                                <div class="card">
+                                <div class="card hoverable">
                                     <div class="card-image waves-effect waves-block waves-light">
                                         <img class="activator" src="images/office.jpg">
                                     </div>
@@ -137,7 +125,7 @@
                                 </div>
                             </div>
                             <div class="col s12 m6 l3">
-                                <div class="card">
+                                <div class="card hoverable">
                                     <div class="card-image waves-effect waves-block waves-light">
                                         <img class="activator" src="images/office.jpg">
                                     </div>
@@ -154,13 +142,13 @@
                 <div class="col center-aligned s12 m6 l6">
                     <div class="row">
                         <div class="input-field col s12">
-                            <input type="text" id="autocomplete-input1" class="autocomplete">
+                            <input type="text" onkeyup="filterTable()" id="autocomplete-input1" class="autocomplete">
                             <label for="autocomplete-input1">Search</label>
                             <ul class="autocomplete-content dropdown-content"></ul>
                         </div>
                     </div>
                     <div class="songview">
-                        <table class="highlight bordered">
+                        <table id="sTable" class="highlight bordered">
                             <col width="200" />
                             <col width="20" />
                             <col width="20" />
@@ -202,12 +190,14 @@
             <div class="row">
                 <div class="col l3 s12">
                     <h5 class="white-text">Connect</h5>
-                    <ul>
-                        <li><a href="https://www.facebook.com/rexband"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-                        <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-                        <li><a href="https://soundcloud.com/rexband"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-                        <li><a href="https://soundcloud.com/rexband"><i class="fa fa-soundcloud" aria-hidden="true"></i> Soundcloud</a></li>
-                    </ul>
+                    <table>
+                        <tr>
+                            <td><a href="https://www.facebook.com/rexband"><i class="faf fa fa-facebook-square" aria-hidden="true"></i></a></td>
+                            <td><a href="#"><i class="faf fa fa-twitter-square" aria-hidden="true"></i></a></td>
+                            <td><a href="https://soundcloud.com/rexband"><i class="faf fa fa-instagram" aria-hidden="true"></i></a></td>
+                            <td><a href="https://soundcloud.com/rexband"><i class="faf fa fa-soundcloud" aria-hidden="true"></i></a></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
