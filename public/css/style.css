@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Amatic-Bold';
+    src: url(../fonts/Amatic-Bold.ttf) format('truetype');
+}
+
+body {
+    background: #00AEEF;
+}
+
+.wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content {
+    text-align: center;
+    color: #FFF;
+}
+
+.content h2 {
+    color: #FFF;
+    font-size: 5em;
+    font-family: 'Amatic-Bold';
+}
+
+
+/*** responsice layout ***/
+
+@media all and (max-width: 1024px) {
+    .wrap {
+        width: 90%;
+        /* required */
+    }
+    .content h2 {
+        font-size: 4.5em;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .wrap {
+        width: 95%;
+        /* required */
+    }
+    .content h2 {
+        font-size: 4em;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .wrap {
+        width: 95%;
+        /* required */
+    }
+    .content h2 {
+        font-size: 3.4em;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .wrap {
+        width: 90%;
+        /* required */
+    }
+    .content h2 {
+        font-size: 3em;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .wrap {
+        width: 95%;
+        /* required */
+    }
+    .content h2 {
+        font-size: 2.3em;
+    }
+}
