@@ -1,7 +1,7 @@
 .brand-logo {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
-    height: 40px;
+    height: 30px;
     width: auto;
 }
 
@@ -15,7 +15,7 @@ p {
 }
 
 .parallax-container {
-    min-height: 380px;
+    min-height: 310px;
     line-height: 0;
     height: auto;
     color: rgba(255, 255, 255, .9);
@@ -34,9 +34,9 @@ p {
         top: 10%;
     }
     .brand-logo {
-        margin-top: 10px;
+        margin-top: 15px;
         margin-bottom: 10px;
-        height: 40px;
+        height: 30px;
         width: auto;
     }
 }
@@ -75,8 +75,8 @@ tr {
 }
 
 .newalb {
-    width: 300px;
-    height: 300px;
+    width: 230px;
+    height: 230px;
     margin-top: 20px;
     border: 3px solid white;
 }
