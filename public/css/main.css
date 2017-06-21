@@ -125,3 +125,7 @@ tr {
 .modal-footer {
     margin-bottom: 10px !important;
 }
+
+.modal.bottom-sheet {
+    max-height: 530px;
+}

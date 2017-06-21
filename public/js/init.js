@@ -6,8 +6,15 @@
             closeOnClick: true,
             draggable: true
         });
+        $('.modal').modal({
+            dismissible: true,
+            opacity: .5,
+            inDuration: 300,
+            outDuration: 200,
+            startingTop: '4%',
+            endingTop: '50%'
+        });
         $('.parallax').parallax();
-        $('.modal').modal();
         $('select').material_select();
     });
 })(jQuery);
