@@ -16,6 +16,7 @@
         });
         $('.parallax').parallax();
         $('.modal').modal();
+        $('select').material_select();
     });
 })(jQuery);
 

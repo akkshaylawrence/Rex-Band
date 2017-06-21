@@ -4,36 +4,44 @@
     height: 30px;
     width: auto;
 }
+
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
+
 main {
     flex: 1 0 auto;
 }
+
 p {
     line-height: 2rem;
 }
+
 .button-collapse {
     color: white;
     margin-left: 0px;
 }
+
 .parallax-container.index {
     min-height: 380px;
     line-height: 0;
     height: auto;
     color: rgba(255, 255, 255, .9);
 }
+
 .parallax-container.music {
     min-height: 310px;
     line-height: 0;
     height: auto;
     color: rgba(255, 255, 255, .9);
 }
+
 .parallax-container .section {
     width: 100%;
 }
+
 @media screen and (max-width: 992px) {
     .parallax-container .section {
         position: absolute;
@@ -49,6 +57,7 @@ p {
         width: auto;
     }
 }
+
 @media screen and (max-width: 600px) {
     #index-banner .section {
         top: 0;
@@ -60,44 +69,51 @@ p {
         width: auto;
     }
 }
+
 .icon-block {
     padding: 0 15px;
 }
+
 .icon-block .material-icons {
     font-size: inherit;
 }
+
 footer.page-footer {
     margin: 0;
 }
+
 .horizontal {
     margin-top: 14px;
 }
+
 tr {
     margin-top: 10px;
     padding: 0px;
 }
+
 .newalb {
     width: 230px;
     height: 230px;
     margin-top: 20px;
     border: 3px solid white;
 }
+
 .newalbm {
     width: 150px;
     height: 150px;
     margin-top: 20px;
     border: 3px solid white;
 }
+
 .header {
     padding-left: 0px !important;
     margin-bottom: 0px !important;
 }
+
 .faf {
     color: white;
 }
+
 .newalbd {
     margin-bottom: 8px;
-}
-.formcont{
-    margin: 20px;
 }
