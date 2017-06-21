@@ -18,7 +18,6 @@
         $('select').material_select();
     });
 })(jQuery);
-
 function filterTable() {
     var input, filter, table, tr, td, i;
     input = document.getElementById("autocomplete-input1");
