@@ -13,11 +13,12 @@
             edge: 'left',
             closeOnClick: true,
             draggable: true
-            }
-        );
+        });
+        $('.parallax').parallax();
+        $('.modal').modal();
     });
-    $('.parallax').parallax();
 })(jQuery);
+
 function filterTable() {
     var input, filter, table, tr, td, i;
     input = document.getElementById("autocomplete-input1");
