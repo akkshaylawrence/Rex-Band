@@ -117,3 +117,11 @@ tr {
 .newalbd {
     margin-bottom: 8px;
 }
+
+.modal-content {
+    padding-bottom: 0px !important;
+}
+
+.modal-footer {
+    margin-bottom: 10px !important;
+}
