@@ -9,8 +9,8 @@ function fileDl(name) {
         xhr.responseType = 'blob';
         xhr.onload = function () {
             var a = document.createElement('a');
-            a.href = window.URL.createObjectURL(xhr.response); // xhr.response is a blob
-            a.download = filename; // Set the file name.
+            a.href = window.URL.createObjectURL(xhr.response);
+            a.download = filename;
             a.style.display = 'none';
             document.body.appendChild(a);
             a.click();
@@ -21,8 +21,10 @@ function fileDl(name) {
     }).catch(function (error) {
         switch (error.code) {
             case 'storage/object_not_found':
+                console.log("File UNAVAILABLE!");
                 break;
             case 'storage/unauthorized':
+                console.log("Access UNAUTHORISED!");
                 break;
         }
     });

@@ -5,7 +5,6 @@
     databaseURL: "https://rex-band.firebaseio.com",
     projectId: "rex-band",
     storageBucket: "rex-band.appspot.com",
-    messagingSenderId: "836612414224"
     };
     firebase.initializeApp(config);
     $(document).ready(function () {
@@ -18,7 +17,7 @@
         $('.parallax').parallax();
         $('select').material_select();
         $('.scrollspy').scrollSpy({
-            scrollOffset: 100
+            scrollOffset: 60
         });
         $('table#sTable tr').click(function () {
             var val = $(this).find('td:first').text();
