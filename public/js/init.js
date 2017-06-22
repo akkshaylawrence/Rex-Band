@@ -16,6 +16,7 @@
         });
         $('.parallax').parallax();
         $('select').material_select();
+        $('.scrollspy').scrollSpy();
     });
 })(jQuery);
 function filterTable() {

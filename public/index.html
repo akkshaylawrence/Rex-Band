@@ -15,8 +15,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 
-<body>
-    <div class="navbar-fixed">
+<body data-spy="scroll" data-target=".navbar" offset="200">
+    <div class="navbar-fixed scrollspy" id="#contact">
         <nav class="black" role="navigation">
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             <div class="nav-wrapper container">
@@ -26,7 +26,7 @@
                     <li><a href="tour.html">Tour</a></li>
                     <li><a href="music.html">Music</a></li>
                     <!--<li><a href="temp.html">Videos</a></li>-->
-                    <li><a href="#modal1">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -45,7 +45,6 @@
         <li><a href="tour.html">Tour</a></li>
         <li><a href="music.html">Music</a></li>
         <!--<li><a href="temp.html">Videos</a></li>-->
-        <li><a href="#modal1">Contact</a></li>
     </ul>
     <div id="index-banner" class="parallax-container index">
         <div class="parallax hide-on-large-only">
@@ -65,7 +64,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div id="contact" class="container">
         <div class="section">
             <div class="row">
                 <div class="col s12 center">
