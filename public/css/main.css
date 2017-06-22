@@ -23,7 +23,7 @@ p {
     margin-left: 320px;
 }
 .parallax-container.index {
-    min-height: 550px;
+    min-height: 665px;
     line-height: 0;
     height: auto;
     color: rgba(255, 255, 255, .9);
@@ -121,7 +121,7 @@ tr {
 .modal.bottom-sheet {
     max-height: 530px;
 }
-.col.s12.m6.l6>.row>.col.s12>.row {
+.col.s12.m6.l66>.row>.col.s12>.row {
     margin-bottom: 3px !important;
 }
 .col.s12.m6.l6>.row>.col.s12>.row>.input-field {

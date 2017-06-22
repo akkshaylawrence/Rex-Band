@@ -1,4 +1,13 @@
 (function ($) {
+    var config = {
+    apiKey: "AIzaSyDmEcN3NqLcI3mMliJPUM-HUn3rSwyvVFs",
+    authDomain: "rex-band.firebaseapp.com",
+    databaseURL: "https://rex-band.firebaseio.com",
+    projectId: "rex-band",
+    storageBucket: "rex-band.appspot.com",
+    messagingSenderId: "836612414224"
+    };
+    firebase.initializeApp(config);
     $(document).ready(function () {
         $('.button-collapse').sideNav({
             menuWidth: 200,
@@ -6,17 +15,15 @@
             closeOnClick: true,
             draggable: true
         });
-        $('.modal').modal({
-            dismissible: true,
-            opacity: .5,
-            inDuration: 300,
-            outDuration: 200,
-            startingTop: '4%',
-            endingTop: '50%'
-        });
         $('.parallax').parallax();
         $('select').material_select();
-        $('.scrollspy').scrollSpy();
+        $('.scrollspy').scrollSpy({
+            scrollOffset: 100
+        });
+        $('table#sTable tr').click(function () {
+            var val = $(this).find('td:first').text();
+            fileDl(val);
+        });
     });
 })(jQuery);
 function filterTable() {
