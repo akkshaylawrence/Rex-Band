@@ -121,10 +121,10 @@ tr {
 .modal.bottom-sheet {
     max-height: 530px;
 }
-.col.s6>.row>.col.s12>.row {
+.col.s12.m6.l6>.row>.col.s12>.row {
     margin-bottom: 3px !important;
 }
-.col.s6>.row>.col.s12>.row>.input-field {
+.col.s12.m6.l6>.row>.col.s12>.row>.input-field {
     margin-top: 5px !important;
 }
 .container>.section>.row {
