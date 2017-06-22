@@ -10,8 +10,8 @@ function fileDl(name) {
         xhr.onload = function () {
             var a = document.createElement('a');
             a.href = window.URL.createObjectURL(xhr.response);
-            a.download = filename;
             a.style.display = 'none';
+            a.download = filename;
             document.body.appendChild(a);
             a.click();
             delete a;
