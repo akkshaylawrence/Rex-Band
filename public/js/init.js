@@ -14,6 +14,7 @@
             closeOnClick: true,
             draggable: true
         });
+        $('.modal').modal();
         $('.parallax').parallax();
         $('select').material_select();
         $('.scrollspy').scrollSpy({
