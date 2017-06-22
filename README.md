@@ -1,4 +1,3 @@
 # Rex-Band
-## Backend Code Branch
-- Official Website of Rex Band (Beta stage)
+- Official Website of Rex Band (Beta)
 - hosted using Firebase at [Rexband](https://rex-band.firebaseapp.com/index.html).
