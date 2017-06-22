@@ -21,7 +21,7 @@
         });
         $('table#sTable tr').click(function () {
             var val = $(this).find('td:first').text();
-            fileDl(val);
+            download(val);
         });
     });
 })(jQuery);
