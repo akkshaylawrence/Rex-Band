@@ -87,8 +87,8 @@
                     <form class="col s12">
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="name" type="text" />
-                                <label for="name">First Name</label>
+                                <input id="name" type="text" class="validate"/>
+                                <label for="name" >First Name</label>
                             </div>
                         </div>
                         <div class="row">
@@ -99,13 +99,13 @@
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="email" type="email" required />
-                                <label for="email">Email</label>
+                                <input id="email" type="email" class="validate"/>
+                                <label for="email" data-error="Not a valid email id">Email</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
                                 <label for="textarea1">Something you want to say to us</label>
                             </div>
                         </div>
