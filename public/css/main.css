@@ -147,3 +147,6 @@ tr {
 .col.s3>.responsive-img{
     padding-top: 70px;
 }
+.container.scrollspy>.row{
+    margin-bottom: 30px;
+}
