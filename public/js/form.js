@@ -17,6 +17,7 @@ function saveForm() {
             state: state.value,
             phone: phone.value
         });
+        Materialize.toast('We will keep in touch!', 4000)
     } else {
         database.ref('Feedback/' + userId).set({
             firstname: name.value,
@@ -27,5 +28,6 @@ function saveForm() {
         });
         submit.classList.add("disabled");
         submit.innerHTML = "Submitted";
+        Materialize.toast('We will get back to you soon!', 4000)
     }
 }
