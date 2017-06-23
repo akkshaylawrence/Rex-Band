@@ -8,9 +8,9 @@ function saveForm() {
     var state = document.getElementById('state');
     var phone = document.getElementById('phone');
     var submit = document.getElementById('submit');
-    userId = Math.floor((Math.random() * 1000000) + 1);
     if (lastname == null) {
-        database.ref('Subscribers/' + userId).set({
+        var userID = phone.value;
+        database.ref('Subscribers/' + userID).set({
             firstname: name.value,
             email: email.value,
             country: country.value,
@@ -19,7 +19,8 @@ function saveForm() {
         });
         Materialize.toast('We will keep in touch!', 4000)
     } else {
-        database.ref('Feedback/' + userId).set({
+        var userIDf = name.value + lastname.value;
+        database.ref('Feedback/' + userIDf).set({
             firstname: name.value,
             lastname: lastname.value,
             email: email.value,
