@@ -22,7 +22,7 @@
         });
         $('table#sTable tr').click(function () {
             var val = $(this).find('td:first').text();
-            download(val);
+            download(val,'Lyrics/');
         });
     });
 })(jQuery);
