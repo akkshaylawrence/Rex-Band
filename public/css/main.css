@@ -133,3 +133,9 @@ tr {
 .row.contact {
     margin-bottom: 0px;
 }
+.modal-content>.row.contact>.col.s12>.row{
+    margin-bottom: 2px;
+}
+.modal-content>h4,p{
+    margin: 2px;
+}

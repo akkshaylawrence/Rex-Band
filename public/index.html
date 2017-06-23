@@ -25,8 +25,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="tour.html">Tour</a></li>
                     <li><a href="music.html">Music</a></li>
-                    <!--<li><a href="temp.html">Videos</a></li>-->
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#modal1" class="waves-effect waves-light btn red">Subscribe</a></li>
                 </ul>
             </div>
         </nav>
@@ -44,7 +44,8 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="tour.html">Tour</a></li>
         <li><a href="music.html">Music</a></li>
-        <!--<li><a href="temp.html">Videos</a></li>-->
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#modal1" class="waves-effect waves-light btn red">Subscribe</a></li>
     </ul>
     <div id="index-banner" class="parallax-container index">
         <div class="parallax hide-on-large-only">
@@ -370,6 +371,49 @@
                     </form>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>Subscribe</h4>
+            <p>Subscribe to get updates on Concerts and Song releases.</p>
+            <div class="row contact">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="name" type="text" />
+                            <label for="name">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" required />
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="country" type="text" />
+                            <label>Country</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="state" type="text" />
+                            <label>State</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <div class="input-field col s6">
+                                <input id="phone" type="text" />
+                                <label>Phone</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a id="sub" href="#" onclick="saveForm()" class="modal-action modal-close waves-effect waves-green btn-flat ">Subscribe</a>
         </div>
     </div>
     <footer class="page-footer black">
