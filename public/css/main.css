@@ -121,7 +121,7 @@ tr {
 .modal.bottom-sheet {
     max-height: 530px;
 }
-.col.s12.m6.l66>.row>.col.s12>.row {
+.col.s12.m6.l6>.row>.col.s12>.row {
     margin-bottom: 3px !important;
 }
 .col.s12.m6.l6>.row>.col.s12>.row>.input-field {
@@ -138,4 +138,9 @@ tr {
 }
 .modal-content>h4,p{
     margin: 2px;
+}
+#contactus{
+    border: 1px solid rgba(0,0,0,.6);
+    margin-top: 5px;
+    padding: 10px;
 }
