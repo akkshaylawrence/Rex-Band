@@ -83,8 +83,8 @@
                     <form class="col s12">
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="first_name" type="text" />
-                                <label for="first_name">First Name</label>
+                                <input id="name" type="text" />
+                                <label for="name">First Name</label>
                             </div>
                         </div>
                         <div class="row">
@@ -363,15 +363,8 @@
                                             </select>
                                 <label>Country</label>
                             </div>
-                            <div class="input-field col s6">
-                                <p>
-                                    <input type="checkbox" class="filled-in" id="filled-in-box" />
-                                    <label for="filled-in-box">Subscribe to Updates</label>
-                                </p>
-                            </div>
-                        </div>
                         <div class="row">
-                            <button class="btn btn-flat waves-effect waves-light right" onclick="saveForm()">Submit
+                            <button id="submit" class="btn btn-flat waves-effect waves-light right" onclick="saveForm()">Submit
                                             <i class="material-icons right">send</i>
                                         </button>
                         </div>

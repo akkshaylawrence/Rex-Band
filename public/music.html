@@ -25,7 +25,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="tour.html">Tour</a></li>
                     <li><a href="music.html">Music</a></li>
-                    <li><a href="#modal1">Sign Up</a></li>
+                    <li><a href="#modal1" class="waves-effect waves-light btn red">Subscribe</a></li>
                 </ul>
             </div>
         </nav>
@@ -43,7 +43,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="tour.html">Tour</a></li>
         <li><a href="music.html">Music</a></li>
-        <li><a href="#modal1">Sign Up</a></li>
+        <li><a href="#modal1" class="waves-effect waves-light btn red">Subscribe</a></li>
     </ul>
     <div id="index-banner" class="parallax-container music">
         <div class="parallax">
@@ -145,9 +145,9 @@
                                     <td><a href="#" onClick="return false;"><i class="material-icons">vertical_align_bottom</i></a></td>
                                     <!--<td><a href="#" onClick="return false;"><i class="material-icons">vertical_align_bottom</i></a></td>-->
                                 </tr>
-                                    <td>Under the wings</td>
-                                    <td><a href="#" onClick="return false;"><i class="material-icons">vertical_align_bottom</i></a></td>
-                                    <!--<td><a href="#" onClick="return false;"><i class="material-icons">vertical_align_bottom</i></a></td>-->
+                                <td>Under the wings</td>
+                                <td><a href="#" onClick="return false;"><i class="material-icons">vertical_align_bottom</i></a></td>
+                                <!--<td><a href="#" onClick="return false;"><i class="material-icons">vertical_align_bottom</i></a></td>-->
                                 </tr>
                                 <tr>
                                     <td>Wings of Mercy</td>
@@ -233,11 +233,45 @@
     </div>
     <div id="modal1" class="modal modal-fixed-footer">
         <div class="modal-content">
-            <h4>Sign Up</h4>
-            <p>A bunch of text</p>
+            <h4>Subscribe</h4>
+            <p>Subscribe to get updates on Concerts and Song releases.</p>
+            <div class="row contact">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="name" type="text" />
+                            <label for="name">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" required />
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="country" type="text" />
+                            <label>Country</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="state" type="text"/>
+                            <label>State</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                        <div class="input-field col s6">
+                            <input id="phone" type="text"/>
+                            <label>Phone</label>
+                        </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+            <a href="#!" onclick="saveForm()" class="modal-action modal-close waves-effect waves-green btn-flat ">Subscribe</a>
         </div>
     </div>
     <footer class="page-footer black">
@@ -265,8 +299,10 @@
 <script src="js/materialize.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 <script src="js/file.js"></script>
 <script src="js/init.js"></script>
+<script src="js/form.js"></script>
 <script src="https://use.fontawesome.com/03a4b7b82e.js"></script>
 
 </html>

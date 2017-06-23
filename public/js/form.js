@@ -1,22 +1,31 @@
 function saveForm() {
     var database = firebase.database();
-    var firstname = document.getElementById('first_name').value;
-    var lastname = document.getElementById('last_name').value;
-    var email = document.getElementById('email').value;
-    var country = document.getElementById('country').value;
-    var text = document.getElementById('textarea1').value;
-    var sub = document.getElementById('filled-in-box').value;
+    var name = document.getElementById('name');
+    var lastname = document.getElementById('last_name');
+    var email = document.getElementById('email');
+    var country = document.getElementById('country');
+    var text = document.getElementById('textarea1');
+    var state = document.getElementById('state');
+    var phone = document.getElementById('phone');
+    var submit = document.getElementById('submit');
     userId = Math.floor((Math.random() * 1000000) + 1);
-    database.ref('Feedback/' + userId).set({
-        firstname: firstname,
-        lastname: lastname,
-        email: email,
-        country: country,
-        message: text
-    });
-    if (sub == 'on') {
+    if (lastname == null) {
         database.ref('Subscribers/' + userId).set({
-            email: email
+            firstname: name.value,
+            email: email.value,
+            country: country.value,
+            state: state.value,
+            phone: phone.value
         });
+    } else {
+        database.ref('Feedback/' + userId).set({
+            firstname: name.value,
+            lastname: lastname.value,
+            email: email.value,
+            country: country.value,
+            message: text.value
+        });
+        submit.classList.add("disabled");
+        submit.innerHTML = "Submitted";
     }
 }
