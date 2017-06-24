@@ -152,3 +152,6 @@ p {
 .container.scrollspy>.row {
     margin-bottom: 30px;
 }
+#tourp{
+    height: auto;
+}
