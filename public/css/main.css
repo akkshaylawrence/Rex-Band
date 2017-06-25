@@ -158,3 +158,8 @@ p {
 .col.s12>.card-panel.hoverable>span>h3{
     margin-bottom: 5px;
 }
+.newcon{
+    max-width: 150px;
+    height: auto;
+    border: 2px solid white;
+}
