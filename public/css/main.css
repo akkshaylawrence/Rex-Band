@@ -45,12 +45,6 @@ p {
     #index-banner .section {
         top: 10%;
     }
-    .brand-logo {
-        margin-top: 15px;
-        margin-bottom: 10px;
-        height: 30px;
-        width: auto;
-    }
     .container.cent {
         margin-left: auto;
     }
@@ -58,12 +52,6 @@ p {
 @media screen and (max-width: 600px) {
     #index-banner .section {
         top: 0;
-    }
-    .brand-logo {
-        margin-top: 15px;
-        margin-bottom: 10px;
-        height: 30px;
-        width: auto;
     }
 }
 @media screen and (max-width: 600px) {
@@ -168,6 +156,7 @@ p {
     height: auto;
 }
 .square{
+    width: 100%;
     max-width: 100px;
     height: auto;
 }
