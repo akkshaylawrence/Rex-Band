@@ -1,1 +1,41 @@
-function saveForm(){var e=firebase.database(),t=document.getElementById("name"),a=document.getElementById("last_name"),n=document.getElementById("email"),l=document.getElementById("country"),d=document.getElementById("textarea1"),u=document.getElementById("state"),m=document.getElementById("phone"),s=document.getElementById("submit"),o=document.getElementById("sub");userId=Math.floor(1e6*Math.random()+1),null==a?(e.ref("Subscribers/"+userId).set({firstname:t.value,email:n.value,country:l.value,state:u.value,phone:m.value}),o.classList.add("disabled"),o.innerHTML="Submitted",Materialize.toast("We will keep in touch!",4e3)):(e.ref("Feedback/"+userId).set({firstname:t.value,lastname:a.value,email:n.value,country:l.value,message:d.value}),s.classList.add("disabled"),s.innerHTML="Submitted",Materialize.toast("We will get back to you soon!",4e3))}
+function saveForm() {
+    var database = firebase.database();
+    var name = document.getElementById('names').value;
+    var email = document.getElementById('emails').value;
+    var country = document.getElementById('countrys').value;
+    var state = document.getElementById('states').value;
+    var phone = document.getElementById('phones').value;
+    var subs = document.getElementById('subs');
+    userId = Math.floor((Math.random() * 1000000) + 1);
+    database.ref('Subscribers/' + userId).set({
+        Name: name,
+        Email: email,
+        Country: country,
+        State: state,
+        Phone: phone
+    });
+    subs.classList.add("disabled");
+    subs.innerHTML = "Submitted";
+    Materialize.toast('We will keep in touch!', 4000)
+    $('#modal1').modal('close');
+}
+function saveContact() {
+    var database = firebase.database();
+    var name = document.getElementById('name').value;
+    var lastname = document.getElementById('last_name').value;
+    var email = document.getElementById('email').value;
+    var country = document.getElementById('country').value;
+    var text = document.getElementById('textarea1').value;
+    var submit = document.getElementById('submit');
+    userId = Math.floor((Math.random() * 1000000) + 1);
+    database.ref('Feedback/' + userId).set({
+        Firstname: name,
+        Lastname: lastname,
+        Email: email,
+        Country: country,
+        Message: text
+    });
+    submit.classList.add("disabled");
+    submit.innerHTML = "Submitted";
+    Materialize.toast('We will get back to you soon!', 4000)
+}

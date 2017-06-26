@@ -91,7 +91,7 @@
                     <form class="col s12">
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="name" type="text" class="validate" />
+                                <input id="name" type="text"/>
                                 <label for="name">First Name</label>
                             </div>
                         </div>
@@ -371,7 +371,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <button id="submit" class="btn btn-flat waves-effect waves-light right" onclick="saveForm()">Submit<i class="material-icons right">send</i></button>
+                            <button id="submit" class="btn btn-flat waves-effect waves-light right" onclick="saveContact()">Submit<i class="material-icons right">send</i></button>
                         </div>
                     </form>
                 </div>
@@ -386,31 +386,31 @@
                 <form class="col s12">
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="name" type="text" />
-                            <label for="name">Name</label>
+                            <input id="names" type="text" />
+                            <label for="names">Name</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="email" type="email" required />
-                            <label for="email">Email</label>
+                            <input id="emails" type="email" class="validate" />
+                            <label for="emails">Email</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s6">
-                            <input id="country" type="text" />
-                            <label>Country</label>
+                            <input id="countrys" type="text" />
+                            <label for="countrys">Country</label>
                         </div>
                         <div class="input-field col s6">
-                            <input id="state" type="text" />
-                            <label>State</label>
+                            <input id="states" type="text" />
+                            <label for="states">State</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
                             <div class="input-field col s6">
-                                <input id="phone" type="text" />
-                                <label>Phone</label>
+                                <input id="phones" type="text" />
+                                <label for="phones">Phone</label>
                             </div>
                         </div>
                     </div>
@@ -418,7 +418,7 @@
             </div>
         </div>
         <div class="modal-footer">
-            <a id="sub" href="#" onclick="saveForm()" class="modal-action modal-close waves-effect waves-green btn-flat ">Subscribe</a>
+            <a id="subs" href="#" onclick="saveForm()" class="waves-effect waves-green btn-flat ">Subscribe</a>
         </div>
     </div>
     <footer class="page-footer black">
