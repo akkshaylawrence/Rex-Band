@@ -48,13 +48,23 @@ p {
     .container.cent {
         margin-left: auto;
     }
+    .parallax-container.index {
+        min-height: 400px;
+        line-height: 0;
+        height: auto;
+        color: rgba(255, 255, 255, .9);
+    }
 }
 @media screen and (max-width: 600px) {
     #index-banner .section {
         top: 0;
     }
-}
-@media screen and (max-width: 600px) {
+    .parallax-container.index {
+        min-height: 400px;
+        line-height: 0;
+        height: auto;
+        color: rgba(255, 255, 255, .9);
+    }
     .container.cent {
         margin-left: auto;
     }
@@ -140,22 +150,22 @@ p {
 .container.scrollspy>.row {
     margin-bottom: 30px;
 }
-#tourp{
+#tourp {
     height: auto;
 }
-.col.s12>.card-panel.hoverable>span>h3{
+.col.s12>.card-panel.hoverable>span>h3 {
     margin-bottom: 5px;
 }
-.newcon{
+.newcon {
     max-width: 150px;
     height: auto;
     border: 2px solid white;
 }
-#indfull{
+#indfull {
     width: 100%;
     height: auto;
 }
-.square{
+.square {
     width: 100%;
     max-width: 100px;
     height: auto;

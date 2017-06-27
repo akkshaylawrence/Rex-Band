@@ -1,3 +1,12 @@
+function guid() {
+  function s4() {
+    return Math.floor((1 + Math.random()) * 0x10000)
+      .toString(16)
+      .substring(1);
+  }
+  return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+    s4() + '-' + s4() + s4() + s4();
+}
 function saveForm() {
     var name = document.getElementById('names').value;
     var email = document.getElementById('emails').value;
@@ -5,7 +14,8 @@ function saveForm() {
     var state = document.getElementById('states').value;
     var phone = document.getElementById('phones').value;
     var subs = document.getElementById('subs');
-    userId = Math.floor((Math.random() * 1000000) + 1);
+    var subbtn = document.getElementById('subbtn');
+    userId = guid();
     database.ref('Subscribers/' + userId).set({
         Name: name,
         Email: email,
@@ -15,7 +25,9 @@ function saveForm() {
     });
     subs.classList.add("disabled");
     subs.innerHTML = "Submitted";
-    Materialize.toast('We will keep in touch!', 4000)
+    Materialize.toast('We will keep in touch!', 4000);
+    subbtn.classList.remove('red')
+    subbtn.innerHTML = "Subscribed";
     $('#modal1').modal('close');
 }
 function saveContact() {
@@ -25,7 +37,7 @@ function saveContact() {
     var country = document.getElementById('country').value;
     var text = document.getElementById('textarea1').value;
     var submit = document.getElementById('submit');
-    userId = Math.floor((Math.random() * 1000000) + 1);
+    userId = guid();
     database.ref('Feedback/' + userId).set({
         Firstname: firstname,
         Lastname: lastname,
