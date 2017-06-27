@@ -9,9 +9,6 @@ body {
     min-height: 100vh;
     flex-direction: column;
 }
-main {
-    flex: 1 0 auto;
-}
 p {
     line-height: 2rem;
 }
@@ -91,13 +88,7 @@ p {
 .col.s3.m3.l3>.responsive-img {
     padding-top: 20px;
 }
-.icon-block {
-    padding: 0 15px;
-}
-.icon-block .material-icons {
-    font-size: inherit;
-}
-footer.page-footer {
+.footer.page-footer {
     margin: 0;
 }
 .horizontal {
