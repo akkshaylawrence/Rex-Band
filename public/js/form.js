@@ -1,5 +1,4 @@
 function saveForm() {
-    var database = firebase.database();
     var name = document.getElementById('names').value;
     var email = document.getElementById('emails').value;
     var country = document.getElementById('countrys').value;
@@ -20,8 +19,7 @@ function saveForm() {
     $('#modal1').modal('close');
 }
 function saveContact() {
-    var database = firebase.database();
-    var name = document.getElementById('name').value;
+    var firstname = document.getElementById('first_name').value;
     var lastname = document.getElementById('last_name').value;
     var email = document.getElementById('email').value;
     var country = document.getElementById('country').value;
@@ -29,7 +27,7 @@ function saveContact() {
     var submit = document.getElementById('submit');
     userId = Math.floor((Math.random() * 1000000) + 1);
     database.ref('Feedback/' + userId).set({
-        Firstname: name,
+        Firstname: firstname,
         Lastname: lastname,
         Email: email,
         Country: country,
@@ -37,5 +35,5 @@ function saveContact() {
     });
     submit.classList.add("disabled");
     submit.innerHTML = "Submitted";
-    Materialize.toast('We will get back to you soon!', 4000)
+    Materialize.toast('We will get back to you soon!', 4000);
 }

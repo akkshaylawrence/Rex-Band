@@ -8,3 +8,4 @@
     };
     firebase.initializeApp(config);
 })(jQuery);
+var database = firebase.database();
