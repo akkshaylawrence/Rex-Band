@@ -23,7 +23,7 @@ p {
     margin-left: 320px;
 }
 .parallax-container.index {
-    min-height: 665px;
+    min-height: 400px;
     line-height: 0;
     height: auto;
     color: rgba(255, 255, 255, .9);
@@ -49,7 +49,7 @@ p {
         margin-left: auto;
     }
     .parallax-container.index {
-        min-height: 400px;
+        min-height: 665px;
         line-height: 0;
         height: auto;
         color: rgba(255, 255, 255, .9);
@@ -63,7 +63,7 @@ p {
         top: 0;
     }
     .parallax-container.index {
-        min-height: 400px;
+        min-height: 665px;
         line-height: 0;
         height: auto;
         color: rgba(255, 255, 255, .9);
