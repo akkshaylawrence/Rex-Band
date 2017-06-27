@@ -37,7 +37,7 @@ p {
 .parallax-container .section {
     width: 100%;
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
     .parallax-container .section {
         position: absolute;
         top: 40%;
@@ -54,8 +54,11 @@ p {
         height: auto;
         color: rgba(255, 255, 255, .9);
     }
+    .col.s3.m3.l3>.responsive-img {
+        padding-top: 70px !important;
+    }
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
     #index-banner .section {
         top: 0;
     }
@@ -68,6 +71,12 @@ p {
     .container.cent {
         margin-left: auto;
     }
+    .col.s3.m3.l3>.responsive-img {
+        padding-top: 70px !important;
+    }
+}
+.col.s3.m3.l3>.responsive-img {
+    padding-top: 20px;
 }
 .icon-block {
     padding: 0 15px;
@@ -143,9 +152,6 @@ p {
     border-radius: 15px 50px;
     margin-top: 0px;
     padding: 10px;
-}
-.col.s3>.responsive-img {
-    padding-top: 70px;
 }
 .container.scrollspy>.row {
     margin-bottom: 30px;
