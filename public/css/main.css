@@ -57,6 +57,9 @@ p {
     .col.s3.m3.l3>.responsive-img {
         padding-top: 70px !important;
     }
+    #tagline {
+        margin-top: 200px !important;
+    }
 }
 @media screen and (min-width: 600px) {
     #index-banner .section {
@@ -74,6 +77,16 @@ p {
     .col.s3.m3.l3>.responsive-img {
         padding-top: 70px !important;
     }
+    #tagline {
+        margin-top: 200px !important;
+    }
+}
+#tagline {
+    margin-top: 50px;
+}
+#tagline>.row.center>.header.col.s12{
+    margin-top: 5px;
+    padding-right: 0px;
 }
 .col.s3.m3.l3>.responsive-img {
     padding-top: 20px;
@@ -175,4 +188,8 @@ p {
     width: 100%;
     max-width: 100px;
     height: auto;
+}
+#index-banner>.parallax.hide-on-large-only{
+    height: 100% !important;
+    width: auto !important;
 }
