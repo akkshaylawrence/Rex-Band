@@ -120,6 +120,7 @@ tr {
 .faf {
     color: white;
     margin-right: 10px;
+    margin-left: 10px;
 }
 .newalbd {
     margin-bottom: 8px;
@@ -159,6 +160,7 @@ p {
     padding: 10px;
 }
 .container.scrollspy>.row {
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 #tourp {
@@ -191,8 +193,8 @@ p {
 .page-footer.black{
     padding-top: 5px;
 }
-.row.center{
-    margin-bottom: 0px;
+.footer-copyright>.container>.row{
+    margin-bottom: 3px;
 }
 .row.center>.row{
     margin-bottom: 3px;
