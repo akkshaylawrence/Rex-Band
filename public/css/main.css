@@ -119,6 +119,7 @@ tr {
 }
 .faf {
     color: white;
+    margin-right: 10px;
 }
 .newalbd {
     margin-bottom: 8px;
@@ -186,4 +187,13 @@ p {
 #index-banner>.parallax.hide-on-large-only {
     height: 100% !important;
     width: auto !important;
+}
+.page-footer.black{
+    padding-top: 5px;
+}
+.row.center{
+    margin-bottom: 0px;
+}
+.row.center>.row{
+    margin-bottom: 3px;
 }
