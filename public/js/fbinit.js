@@ -8,4 +8,5 @@
     };
     firebase.initializeApp(config);
 })(jQuery);
+firebase.auth().signInAnonymously();
 var database = firebase.database();
