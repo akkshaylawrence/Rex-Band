@@ -16,9 +16,6 @@ p {
     color: white;
     margin-left: 0px;
 }
-.container.cent {
-    margin-left: 320px;
-}
 .parallax-container.index {
     min-height: 400px;
     line-height: 0;
@@ -42,9 +39,6 @@ p {
     #index-banner .section {
         top: 10%;
     }
-    .container.cent {
-        margin-left: auto;
-    }
     .parallax-container.index {
         min-height: 665px;
         line-height: 0;
@@ -67,9 +61,6 @@ p {
         line-height: 0;
         height: auto;
         color: rgba(255, 255, 255, .9);
-    }
-    .container.cent {
-        margin-left: auto;
     }
     .col.s3.m3.l3>.responsive-img {
         padding-top: 70px !important;
