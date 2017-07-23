@@ -2,101 +2,101 @@
 <html lang="en">
 
 <head>
-  <title>Admin - Rexband</title>
-  <link rel="icon" href="images/favicon.png" sizes="192x192" type="image/png">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000">
-  <meta name="msapplication-navbutton-color" content="#000000">
-  <script type="text/javascript" src="js/checklogin.js"></script>
-  <link href="../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/layouts/form-center.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<title>Admin - Rexband</title>
+	<link rel="icon" href="images/favicon.png" sizes="192x192" type="image/png">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#000000">
+	<meta name="msapplication-navbutton-color" content="#000000">
+	<script type="text/javascript" src="js/checklogin.js"></script>
+	<link href="../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="css/layouts/form-center.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
-  <div class="navbar-fixed">
-    <nav class="black" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" onclick="logOut()" href="#">
-          <img class="brand-logo center"  src="../images/navlogo.png" alt="Rexband">
-        </a>
-      </div>
-    </nav>
-  </div>
-  <div class="content">
-    <div class="container">
-      <form class="formcenter col s12">
-        <h2>Enter album details</h2>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="albumname" type="text" class="validate">
-            <label for="albumname">Album Name</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="file-field input-field">
-            <div class="btn">
-              <span>Browse</span>
-              <input id="fileb" type="file">
-            </div>
-            <div class="file-path-wrapper">
-              <input class="file-path validate" type="text"placeholder="Add album art.">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <textarea id="albumtext" class="materialize-textarea"></textarea>
-            <label for="albumtext">Album Description</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s1">
-            <i class="fa fa-apple fa-2x"></i>
-          </div>
-          <div class="input-field col s11">
-            <input id="itunes" type="text" class="validate">
-            <label data-error="Invalid Link!" for="itunes">Itunes Link</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s1">
-            <i class="fa fa-soundcloud fa-2x"></i>
-          </div>
-          <div class="input-field col s11">
-            <input id="soundc" type="text" class="validate">
-            <label data-error="Invalid Link!" for="soundc">Soundcloud Link</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s1">
-            <i class="fa fa-youtube-play fa-2x"></i>
-          </div>
-          <div class="input-field col s11">
-            <input id="ytube" type="text" class="validate">
-            <label data-error="Invalid Link!" for="ytube">YouTube Link</label>
-          </div>
-        </div>
-        <h3>Songs</h3>
-        <div class="row songlist">
-          <div class="input-field col s11">
-            <input id="nosong" type="text" class="validate">
-            <label data-error="Invalid number!" for="nosong">Number of songs</label>
-          </div>
-          <div class="col s1">
-            <a href="#/" onclick="addRow()"><i class="fa fa-check fa-2x"></i></a>
-          </div>
-        </div>
-        <div id="list">
-        </div>
-        <div class="row">
-          <a id="albtn" href="#/" class="right waves-effect waves-light btn red disabled">Add Album</a>
-        </div>
-      </form>
-    </div>
-  </div>
-  </div>
+	<div class="navbar-fixed">
+		<nav class="black" role="navigation">
+			<div class="nav-wrapper container">
+				<a id="logo-container" onclick="logOut()" href="#">
+					<img class="brand-logo center"  src="../images/navlogo.png" alt="Rexband">
+				</a>
+			</div>
+		</nav>
+	</div>
+	<div class="content">
+		<div class="container">
+			<form class="formcenter col s12">
+				<h2>Enter album details</h2>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="albumname" type="text" class="validate">
+						<label for="albumname">Album Name</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="file-field input-field">
+						<div class="btn">
+							<span>Browse</span>
+							<input id="fileb" type="file">
+						</div>
+						<div class="file-path-wrapper">
+							<input class="file-path validate" type="text" placeholder="Add album art.">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<textarea id="albumtext" class="materialize-textarea"></textarea>
+						<label for="albumtext">Album Description</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s1">
+						<i class="fa fa-apple fa-2x"></i>
+					</div>
+					<div class="input-field col s11">
+						<input id="itunes" type="text" class="validate">
+						<label data-error="Invalid Link!" for="itunes">Itunes Link</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s1">
+						<i class="fa fa-soundcloud fa-2x"></i>
+					</div>
+					<div class="input-field col s11">
+						<input id="soundc" type="text" class="validate">
+						<label data-error="Invalid Link!" for="soundc">Soundcloud Link</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s1">
+						<i class="fa fa-youtube-play fa-2x"></i>
+					</div>
+					<div class="input-field col s11">
+						<input id="ytube" type="text" class="validate">
+						<label data-error="Invalid Link!" for="ytube">YouTube Link</label>
+					</div>
+				</div>
+				<h3>Songs</h3>
+				<div class="row songlist">
+					<div class="input-field col s11">
+						<input id="nosong" type="text" class="validate">
+						<label data-error="Invalid number!" for="nosong">Number of songs</label>
+					</div>
+					<div class="col s1">
+						<a href="#/" onclick="addRow()"><i class="fa fa-check fa-2x"></i></a>
+					</div>
+				</div>
+				<div id="list">
+				</div>
+				<div class="row">
+					<a id="albtn" href="#/" class="right waves-effect waves-light btn red disabled">Add Album</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	</div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="../js/materialize.min.js"></script>
