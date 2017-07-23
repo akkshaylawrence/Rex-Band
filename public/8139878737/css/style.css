@@ -1,0 +1,116 @@
+.login-form {
+   width: 300px;
+   padding: 3px;
+}
+.profile-image-login {
+   width: 100px;
+   height: 100px !important
+}
+.login-form-text {
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 0.8rem
+}
+.login-text {
+   margin-top: -6px;
+   margin-left: -6px !important
+}
+.card-panel {
+   border-radius: 10px;
+}
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+}
+i.fa.login {
+   margin-top: 8px;
+}
+a.btn {
+   border-radius: 10px;
+}
+.brand-logo {
+   margin-top: 15px;
+   margin-bottom: 10px;
+   height: 30px;
+   width: auto;
+}
+.input-field input[type=email]:focus+label {
+   color: #2196f3;
+}
+.input-field input[type=password]:focus+label {
+   color: #2196f3;
+}
+.input-field input[type=email]:focus {
+   border-bottom: 1px solid #2196f3;
+   box-shadow: 0 1px 0 0 #2196f3;
+}
+.input-field input[type=password]:focus {
+   border-bottom: 1px solid #2196f3;
+   box-shadow: 0 1px 0 0 #2196f3;
+}
+.input-field .prefix.active {
+   color: #2196f3;
+}
+.input-field input.invalid {
+   border-bottom: 1px solid #f44336;
+   box-shadow: 0 1px 0 0 #ef9a9a;
+}
+.blue {
+   background-color: #2196F3 !important;
+}
+.black-text {
+   color: #000000 !important;
+}
+.content {
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+h1 {
+   margin: 5px;
+}
+.col.s12.m4.l4 {
+   margin-top: 10px;
+}
+.col.s12.m6.l6 {
+   margin-top: 10px;
+}
+.content {
+   display: table;
+   display: table-cell;
+   vertical-align: middle;
+}
+.input-field.col.s11>input {
+   margin-bottom: 2px;
+}
+.formcenter.col.s11>.row {
+   margin-bottom: 3px;
+}
+.formcenter.col.s12 {
+   padding: 40px;
+   border: 3px solid #9e9e9e;
+   border-radius: 15px;
+}
+form>h2 {
+   margin-top: 0px;
+}
+.row.songlist {
+   border-radius: 5px;
+}
+.formcenter.col.s12>.row.songlist {
+   margin-bottom: 3px;
+}
+div.col.s1{
+   margin-top: 25px;
+}
+#albtn{
+   margin-top: 10px;
+   display: none;
+}
+.row.songlist>.input-field.col.s11{
+   margin-bottom: 10px;
+}
+#trbtn{
+   margin-top: 10px;
+   display: none;
+}
