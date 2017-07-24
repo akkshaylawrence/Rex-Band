@@ -10,3 +10,4 @@
 })(jQuery);
 firebase.auth().signInAnonymously();
 var database = firebase.database();
+var childData, childKey;

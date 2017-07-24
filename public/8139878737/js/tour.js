@@ -26,7 +26,6 @@ function addLink() {
 	i += 1;
 }
 trbtn.addEventListener('click', function () {
-	//Adding Data to DB
 	var patha = 'Tour/' + tourname.value;
 	database.ref(patha).set({
 		date: tourdate.value,
@@ -37,11 +36,10 @@ trbtn.addEventListener('click', function () {
 	database.ref(pathl).update({
 		tourname: tourname.value
 	});
-	//Uploading Tour Poster
 	var filename = document.getElementById('tourname');
 	var tour = tourname.value;
 	var file = document.getElementById('fileb').files[0];
-	var tourposter = firebase.storage().ref('Tour_Poster/' + tour); // Create a reference to uploaded file
+	var tourposter = firebase.storage().ref('Tour_Poster/' + tour);
 	tourposter.put(file).then(function (snapshot) {
 		var url = snapshot.downloadURL;
 		database.ref('Tour/' + tour + '/').update({
@@ -51,9 +49,8 @@ trbtn.addEventListener('click', function () {
 			tourposter_dlink: url
 		});
 	});
-	//Adding Locations
 	var loc = document.getElementById('location').value;
-	loc = loc.split(","); //spliting them at ','
+	loc = loc.split(",");
 	loclen = loc.length;
 	for (j = 0, k = 0; j < loclen; j++, k++) {
 		l = 'Location:' + k;
