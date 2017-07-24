@@ -29,6 +29,8 @@ if (document.location.href.match(/[^\/]+$/)[0] == "index.html") {
       } else if (childKey == 'tourname') {
          document.getElementById("tourname").innerHTML = childData;
          document.getElementById("tourname1").innerHTML = childData;
+      } else if (childKey == 'tourdate') {
+         document.getElementById("tourdate").innerHTML = 'Starts ' + childData;
       }
    });
 }

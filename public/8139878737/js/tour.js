@@ -34,7 +34,8 @@ trbtn.addEventListener('click', function () {
 	});
 	var pathl = 'Latest/';
 	database.ref(pathl).update({
-		tourname: tourname.value
+		tourname: tourname.value,
+		tourdate:tourdate.value
 	});
 	var filename = document.getElementById('tourname');
 	var tour = tourname.value;
