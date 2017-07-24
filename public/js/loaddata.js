@@ -26,7 +26,7 @@ if (document.location.href.match(/[^\/]+$/)[0] == "index.html") {
       if (childKey == 'tourposter_dlink') {
          document.getElementById("tourp").src = childData;
          document.getElementById("tourp1").src = childData;
-      } else if (childKey == 'albumname') {
+      } else if (childKey == 'tourname') {
          document.getElementById("tourname").innerHTML = childData;
          document.getElementById("tourname1").innerHTML = childData;
       }
