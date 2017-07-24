@@ -11,38 +11,38 @@ function addRow() {
 	for (i = 0; i < number; i++) {
 		j = i + 1;
 		container.innerHTML += '<div class="row song">\
-        <div class="divider"></div>\
-   <div class="input-field col.s12">\
-      <input type="text" id="song' + j + '">\
-      <label for="song' + j + '">Enter song name</label>\
-   </div>\
-   <div class="input-field col s12">\
-      <input type="text" id="songY' + j + '">\
-      <label for="songY' + j + '">Enter YouTube link</label>\
-   </div>\
-   <div class="input-field col s12">\
-      <div class="file-field input-field">\
-         <div class="btn">\
-            <span>Browse</span>\
-            <input type="file" id="file' + j + '"></div>\
-         <div class="file-path-wrapper">\
-            <input type="text" id="filename1" placeholder="Lyrics Files" class="file-path validate">\
-         </div>\
-      </div>\
-   </div>\
-   <div class="col s12">\
-      <div class="file-field input-field">\
-         <div class="btn">\
-            <span>Browse</span>\
-            <input type="file" id="file1' + j + '">\
-         </div>\
-         <div class="file-path-wrapper">\
-            <input type="text" id="filename11" placeholder="Chord Files" class="file-path validate">\
-         </div>\
-      </div>\
-   </div>\
-</div>\
-';
+			<div class="divider"></div>\
+		<div class="input-field col.s12">\
+			<input type="text" id="song' + j + '">\
+			<label for="song' + j + '">Enter song name</label>\
+		</div>\
+		<div class="input-field col s12">\
+			<input type="text" id="songY' + j + '">\
+			<label for="songY' + j + '">Enter YouTube link</label>\
+		</div>\
+		<div class="input-field col s12">\
+			<div class="file-field input-field">\
+				<div class="btn">\
+					<span>Browse</span>\
+					<input type="file" id="file' + j + '"></div>\
+				<div class="file-path-wrapper">\
+					<input type="text" id="filename1" placeholder="Lyrics Files" class="file-path validate">\
+				</div>\
+			</div>\
+		</div>\
+		<div class="col s12">\
+			<div class="file-field input-field">\
+				<div class="btn">\
+					<span>Browse</span>\
+					<input type="file" id="file1' + j + '">\
+				</div>\
+				<div class="file-path-wrapper">\
+					<input type="text" id="filename11" placeholder="Chord Files" class="file-path validate">\
+				</div>\
+			</div>\
+		</div>\
+	</div>\
+	';
 	}
 	return;
 }
@@ -55,6 +55,10 @@ albtn.addEventListener('click', function () {
 		ituneslink: itunes.value,
 		soundcloudlink: soundc.value
 	});
+	var pathl = 'Latest/';
+	database.ref(pathl).update({
+		albumname: albumname.value
+	});
 	var filename = document.getElementById('albumname');
 	var alb = albumname.value;
 	var file = document.getElementById('fileb').files[0];
@@ -63,7 +67,10 @@ albtn.addEventListener('click', function () {
 		var url = snapshot.downloadURL;
 		database.ref('Music/' + alb + '/').update({
 			albumart_dlink: url
-		})
+		});
+		database.ref('Latest/').update({
+			albumart_dlink: url
+		});
 	});
 	var no = document.getElementById('nosong').value;
 	no = parseInt(no);

@@ -33,6 +33,10 @@ trbtn.addEventListener('click', function () {
 		tourtext: tourtext.value,
 		ticlink: ticlink.value
 	});
+	var pathl = 'Latest/';
+	database.ref(pathl).update({
+		tourname: tourname.value
+	});
 	//Uploading Tour Poster
 	var filename = document.getElementById('tourname');
 	var tour = tourname.value;
@@ -42,8 +46,11 @@ trbtn.addEventListener('click', function () {
 		var url = snapshot.downloadURL;
 		database.ref('Tour/' + tour + '/').update({
 			tourposter_dlink: url
-		})
-	})
+		});
+		database.ref('Latest/').update({
+			tourposter_dlink: url
+		});
+	});
 	//Adding Locations
 	var loc = document.getElementById('location').value;
 	loc = loc.split(","); //spliting them at ','
@@ -53,6 +60,6 @@ trbtn.addEventListener('click', function () {
 		var pathh = 'Tour/' + tourname.value + '/' + l + '/';
 		database.ref(pathh).set({
 			Location: loc[j]
-		})
+		});
 	}
 });
