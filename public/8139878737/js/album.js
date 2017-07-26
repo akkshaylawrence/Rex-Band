@@ -48,14 +48,14 @@ function addRow() {
 }
 albtn.addEventListener('click', function () {
 	var i, j;
-	var patha = 'Music/' + albumname.value;
+	var patha = 'Data/Music/' + albumname.value;
 	database.ref(patha).set({
 		albumwriteup: albumtext.value,
 		youtubelink: ytube.value,
 		ituneslink: itunes.value,
 		soundcloudlink: soundc.value
 	});
-	var pathl = 'Latest/';
+	var pathl = 'Data/Latest/';
 	database.ref(pathl).update({
 		albumname: albumname.value
 	});
