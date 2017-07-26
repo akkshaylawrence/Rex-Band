@@ -50,6 +50,7 @@ albtn.addEventListener('click', function () {
 	var i, j;
 	var patha = 'Data/Music/' + albumname.value;
 	database.ref(patha).set({
+		albumname:albumname.value,
 		albumwriteup: albumtext.value,
 		youtubelink: ytube.value,
 		ituneslink: itunes.value,

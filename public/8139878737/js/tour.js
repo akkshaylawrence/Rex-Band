@@ -28,6 +28,7 @@ function addLink() {
 trbtn.addEventListener('click', function () {
 	var patha = 'Data/Tour/' + tourname.value;
 	database.ref(patha).set({
+		tourname:tourname.value,
 		date: tourdate.value,
 		tourtext: tourtext.value,
 		ticlink: ticlink.value
