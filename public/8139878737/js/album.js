@@ -66,10 +66,10 @@ albtn.addEventListener('click', function () {
 	var albumart = firebase.storage().ref('Albumart/' + alb);
 	var task = albumart.put(file).then(function (snapshot) {
 		var url = snapshot.downloadURL;
-		database.ref('Music/' + alb + '/').update({
+		database.ref('Data/Music/' + alb + '/').update({
 			albumart_dlink: url
 		});
-		database.ref('Latest/').update({
+		database.ref('Data/Latest/').update({
 			albumart_dlink: url
 		});
 	});
@@ -78,7 +78,7 @@ albtn.addEventListener('click', function () {
 	for (i = 1; i <= no; i++) {
 		s = 'song' + i;
 		var s = document.getElementById(s).value;
-		var pathh = 'Music/' + albumname.value + '/Songs/' + s;
+		var pathh = 'Data/Music/' + albumname.value + '/Songs/' + s;
 		var youtubelink = 'songY' + i;
 		youtubelink = document.getElementById(youtubelink).value;
 		database.ref(pathh).set({

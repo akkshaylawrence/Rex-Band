@@ -44,10 +44,10 @@ trbtn.addEventListener('click', function () {
 	var tourposter = firebase.storage().ref('Tour_Poster/' + tour);
 	tourposter.put(file).then(function (snapshot) {
 		var url = snapshot.downloadURL;
-		database.ref('Tour/' + tour + '/').update({
+		database.ref('Data/Tour/' + tour + '/').update({
 			tourposter_dlink: url
 		});
-		database.ref('Latest/').update({
+		database.ref('Data/Latest/').update({
 			tourposter_dlink: url
 		});
 	});
@@ -56,7 +56,7 @@ trbtn.addEventListener('click', function () {
 	loclen = loc.length;
 	for (j = 0, k = 0; j < loclen; j++, k++) {
 		l = 'Location:' + k;
-		var pathh = 'Tour/' + tourname.value + '/' + l + '/';
+		var pathh = 'Data/Tour/' + tourname.value + '/' + l + '/';
 		database.ref(pathh).set({
 			Location: loc[j]
 		});
