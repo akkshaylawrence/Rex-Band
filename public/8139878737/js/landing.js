@@ -14,7 +14,7 @@ landbtn.addEventListener('click', function () {
 	var image1 = firebase.storage().ref('Landing_Page/image1');
 	image1.put(file).then(function (snapshot) {
 		var url = snapshot.downloadURL;
-		database.ref('Landing_Page_Images/').update({
+		database.ref('Data/Landing_Page_Images/').update({
 			image1_link: url
 		})
 	})
