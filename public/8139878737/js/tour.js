@@ -26,13 +26,13 @@ function addLink() {
 	i += 1;
 }
 trbtn.addEventListener('click', function () {
-	var patha = 'Tour/' + tourname.value;
+	var patha = 'Data/Tour/' + tourname.value;
 	database.ref(patha).set({
 		date: tourdate.value,
 		tourtext: tourtext.value,
 		ticlink: ticlink.value
 	});
-	var pathl = 'Latest/';
+	var pathl = 'Data/Latest/';
 	database.ref(pathl).update({
 		tourname: tourname.value,
 		tourdate:tourdate.value
