@@ -20,7 +20,7 @@ if (document.location.href.match(/[^\/]+$/)[0] == "music.html") {
 	});
 } else if (document.location.href.match(/[^\/]+$/)[0] == "tour.html") {
 	database.ref('Data/Tour').once('value').then(function (s) {
-		d1 = JSON.stringify(s.val())
+		d = JSON.stringify(s.val())
 		tour(d);
 	}, function (error) {
 		console.error(error);
@@ -52,6 +52,8 @@ function music(d) {
          </div>\
 			';
 			ct.appendChild(dt);
+			document.getElementById("albt" + i).innerHTML = fP.albumname;
+			document.getElementById("albp" + i).src = fP.albumart_dlink;
 			i += 1;
 		}
 	}
@@ -63,7 +65,7 @@ function tour(d) {
 	for (var key in obj) {
 		if (obj.hasOwnProperty(key)) {
 			fP = obj[key];
-			var ct = document.getElementById("c");
+			var ct = document.getElementById("toursv");
 			var dt = document.createElement('div');
 			dt.classList.add("alb");
 			dt.classList.add("col");
@@ -73,16 +75,16 @@ function tour(d) {
 			dt.innerHTML =
 				'<div class="card hoverable">\
             <div class="card-image waves-effect waves-block waves-light">\
-               <a target="_blank"><img id="albp' + i + '" class="activator"></a>\
+               <a target="_blank"><img id="tourp' + i + '" class="activator"></a>\
             </div>\
             <div class="card-content">\
-               <span id="albt' + i + '" class="card-title activator grey-text text-darken-4"></span>\
+               <span id="tourt' + i + '" class="card-title activator grey-text text-darken-4"></span>\
             </div>\
          </div>\
          ';
 			ct.appendChild(dt);
-			document.getElementById("albt" + i).innerHTML = fP.albumname;
-			document.getElementById("albp" + i).src = fP.albumart_dlink;
+			document.getElementById("tourt" + i).innerHTML = fP.tourname;
+			document.getElementById("tourp" + i).src = fP.tourposter_dlink;
 			i += 1;
 		}
 	}
