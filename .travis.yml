@@ -4,7 +4,7 @@ branches:
   except:
   - Dev
 node_js:
-  - "6.11.0"
+  - "8.2.1"
 script:
   - echo "Deploying!!"
 install:
