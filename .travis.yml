@@ -1,4 +1,8 @@
 language: node_js
+# blocklist
+branches:
+  except:
+  - Dev
 node_js:
   - "6.11.0"
 script:
