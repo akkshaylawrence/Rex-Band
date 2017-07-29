@@ -1,4 +1,7 @@
 language: node_js
+branches:
+  except:
+  - Dev
 node_js:
   - "6.11.0"
 script:
