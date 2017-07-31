@@ -14,14 +14,14 @@ function addLink() {
 	var data = document.createElement('div');
 	data.classList.add("row")
 	data.innerHTML +=
-		'<div class="col s1">\
-            <i class="fa fa-youtube-play fa-2x"></i>\
-         </div>\
-         <div class="input-field col s10">\
-            <input id="ytube' + i + '" type="text" class="validate">\
-            <label data-error="Invalid Link!" for="ytube">YouTube Link</label>\
-         </div>\
-      ';
+		`<div class="col s1">\
+			<i class="fa fa-youtube-play fa-2x"></i>\
+		</div>\
+		<div class="input-field col s10">\
+			<input id="ytube` + i + `" type="text" class="validate">\
+			<label data-error="Invalid Link!" for="ytube">YouTube Link</label>\
+		</div>\
+		`;
 	container.appendChild(data);
 	i += 1;
 }
